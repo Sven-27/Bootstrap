@@ -3,6 +3,7 @@
     --white: #ffffff;
     --size: 1.5rem;
     --size2: .8;
+    --size3: 3rem;
     --boldness: 800;
 }
 
@@ -47,9 +48,35 @@ main{
 
 main > h1{
     --yellow: #fbf000;
-    color: var(--yellow)
+    color: var(--yellow);
+    margin-top: 40px;
 } 
 
 main > p{
     color: gray;
+}
+
+.icons{
+    width: 15%;
+    height: 10%;
+    margin-top: 30px;
+}
+
+.icons i{
+    font-size: var(--size3);
+    color: var(--white);
+}
+
+.card-body{
+    background-color: gray
+}
+
+.table{
+    width: 30vw;
+}
+
+.footer h5{
+    display: flex;
+    flex: .5;
+    background-color: gray;
 }
