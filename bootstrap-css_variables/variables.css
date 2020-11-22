@@ -1,0 +1,55 @@
+:root{
+    --yellow: #FFEE88;
+    --white: #ffffff;
+    --size: 1.5rem;
+    --size2: .8;
+    --boldness: 800;
+}
+
+
+
+.container-fluid {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.container-fluid .navbar-brand-1{
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: var(--size);
+    font-weight: var(--boldness);
+}
+
+.container-fluid .navbar-brand{
+    font-size: var(--size2);
+    color: var(--white);
+}
+
+.content-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex: 1.5;
+}
+
+.card-container{
+    background-color: gray;
+    display: flex;
+    flex: 2;
+}
+
+main > h1{
+    --yellow: #fbf000;
+    color: var(--yellow)
+} 
+
+main > p{
+    color: gray;
+}
