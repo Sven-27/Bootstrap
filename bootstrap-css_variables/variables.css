@@ -5,9 +5,13 @@
     --size2: .8;
     --size3: 3rem;
     --boldness: 800;
+    --borderTop: 1px solid #ffffff;
+    --borderBottom: 1px solid #ffffff;
 }
 
-
+.navbar{
+    border-bottom: var(--borderBottom);
+}
 
 .container-fluid {
     width: 30%;
@@ -44,6 +48,7 @@ main{
     background-color: gray;
     display: flex;
     flex: 2;
+    border-top: var(--borderTop);
 }
 
 main > h1{
@@ -75,8 +80,18 @@ main > p{
     width: 30vw;
 }
 
-.footer h5{
-    display: flex;
-    flex: .5;
-    background-color: gray;
+ .footer{
+     width: 100%;
+     color: var(--yellow);
+     display: flex;
+     flex: 0.2;
+     justify-content: center;
+     align-items: center;
+    background-color: rgb(42, 42, 42); 
+    border-top: var(--borderTop);
+} 
+
+.footer > h5{
+    font-size: var(--size2);
+    
 }
