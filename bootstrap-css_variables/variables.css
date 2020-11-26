@@ -14,20 +14,33 @@
 }
 
 .container-fluid {
-    width: 30%;
+    width: 100%;
     margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.container-fluid .navbar-brand-1{
+.container-fluid .navbar-brand{
     text-decoration: none;
     color: var(--yellow);
     font-size: var(--size);
     font-weight: var(--boldness);
+    display: flex;
+    flex: 0.1;
 }
 
-.container-fluid .navbar-brand{
+.navbar-toggler{
+    background-color: var(--yellow);
+}
+
+#navbarTogglerDemo01 .nav-link{
     font-size: var(--size2);
     color: var(--white);
+} 
+
+
+.form > .form-control{
+    width: 200px;
 }
 
 .content-container{
@@ -57,8 +70,22 @@ main > h1{
     margin-top: 40px;
 } 
 
+@media (max-width: 768px){
+    main > h1{
+        max-width: 375px;
+        font-size: 1.2rem; 
+        text-align: center;  
+     }
+}
+
 main > p{
     color: gray;
+}
+
+@media (max-width: 375px){
+    main > p{
+        text-align: center;
+    }
 }
 
 .icons{
@@ -67,9 +94,25 @@ main > p{
     margin-top: 30px;
 }
 
+ @media (max-width: 1024px) {
+     .icons i{
+         margin: 20px;
+        font-size: var(--size);
+        display: flex;
+        justify-content: center;
+     }
+ }
+
 .icons i{
     font-size: var(--size3);
     color: var(--white);
+}
+
+@media (max-width: 768px){
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
 }
 
 .card-body{
